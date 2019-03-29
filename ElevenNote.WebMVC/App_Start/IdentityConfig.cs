@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using ElevenNote.WebMVC.Models;
+using ElevenNote.Data;
 
 namespace ElevenNote.WebMVC
 {
@@ -53,11 +54,11 @@ namespace ElevenNote.WebMVC
             // Configure validation logic for passwords
             manager.PasswordValidator = new PasswordValidator
             {
-                RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
-                RequireDigit = true,
-                RequireLowercase = true,
-                RequireUppercase = true,
+                RequiredLength = 4,
+                RequireNonLetterOrDigit = false,
+                RequireDigit = false,
+                RequireLowercase = false,
+                RequireUppercase = false,
             };
 
             // Configure user lockout defaults
