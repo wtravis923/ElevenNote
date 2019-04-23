@@ -63,6 +63,10 @@
     <Compile Include="Migrations\201903281357251_Initial.Designer.cs">
       <DependentUpon>201903281357251_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904231511247_AddedStarFeature.cs" />
+    <Compile Include="Migrations\201904231511247_AddedStarFeature.Designer.cs">
+      <DependentUpon>201904231511247_AddedStarFeature.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903281357251_Initial.resx">
       <DependentUpon>201903281357251_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904231511247_AddedStarFeature.resx">
+      <DependentUpon>201904231511247_AddedStarFeature.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
